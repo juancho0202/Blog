@@ -3,7 +3,7 @@ const { data: posts } = await usePosts({ limit: 5 })
 
 useSeoMeta({
   title: 'Home',
-  description: 'Latest notes and experiments from the blog.',
+  description: 'Latest articles from the blog.',
 })
 </script>
 
@@ -14,7 +14,7 @@ useSeoMeta({
         Latest writing
       </p>
       <h1 class="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-        Notes about building and maintaining a static Nuxt site.
+        Anything that I find cool to share
       </h1>
     </header>
 
