@@ -1,5 +1,6 @@
 import { readdir, readFile } from 'node:fs/promises'
 import { extname, join } from 'node:path'
+import tailwindcss from '@tailwindcss/vite'
 
 async function getAllMarkdownFiles(directory: string): Promise<string[]> {
   const entries = await readdir(directory, { withFileTypes: true })
@@ -47,8 +48,14 @@ async function getPrerenderPostRoutes(): Promise<string[]> {
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint', '@nuxt/content'],
+  modules: ['@nuxt/eslint', '@nuxt/content', '@nuxt/fonts', '@nuxt/icon', '@nuxtjs/color-mode'],
   devtools: { enabled: true },
+  css: ['~/assets/css/main.css'],
+  colorMode: {
+    classSuffix: '',
+    preference: 'system',
+    fallback: 'light',
+  },
   content: {
     experimental: {
       sqliteConnector: 'native',
@@ -59,6 +66,9 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true,
     },
+  },
+  vite: {
+    plugins: [tailwindcss()],
   },
   typescript: {
     strict: true,
