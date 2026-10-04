@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Introducing the Blog cover placeholder</title>
+  <desc id="desc">Placeholder image for the introducing blog post cover.</desc>
+  <rect width="1200" height="630" fill="#111827" />
+  <rect x="40" y="40" width="1120" height="550" rx="24" fill="#1f2937" stroke="#374151" />
+  <text x="80" y="250" fill="#f9fafb" font-family="Arial, sans-serif" font-size="68" font-weight="700">Introducing the Blog</text>
+  <text x="80" y="330" fill="#d1d5db" font-family="Arial, sans-serif" font-size="36">Placeholder Cover Image</text>
+</svg>

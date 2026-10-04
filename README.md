@@ -60,7 +60,10 @@ This project uses GitHub Actions to build and deploy to GitHub Pages on every pu
 The deploy workflow computes `NUXT_APP_BASE_URL` automatically:
 
 - `/<repo-name>/` for project repositories
-- `/` for repositories ending in `.github.io`
+- `/` only when the repository name exactly matches `<owner>.github.io` (user/org Pages repository)
+
+For this repository (`juancho0202/Blog`), the expected Pages base path is `/Blog/`.
+A repository named `blog.github.io` under owner `juancho0202` is still treated as a project repo and should use `/blog.github.io/`, not `/`.
 
 One-time setup required by the repository owner:
 
