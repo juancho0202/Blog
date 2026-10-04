@@ -48,3 +48,21 @@ path: /blog/my-post-slug
 ```
 
 `path` is a Nuxt Content built-in field, so it is intentionally not part of the collection schema above.
+
+
+## Deployment
+
+This project uses GitHub Actions to build and deploy to GitHub Pages on every push to `main`.
+
+- Deploy workflow: `.github/workflows/deploy.yml`
+- CI workflow for pull requests (lint, typecheck, generate): `.github/workflows/ci.yml`
+
+The deploy workflow computes `NUXT_APP_BASE_URL` automatically:
+
+- `/<repo-name>/` for project repositories
+- `/` for repositories ending in `.github.io`
+
+One-time setup required by the repository owner:
+
+1. Go to **Settings → Pages**
+2. In **Build and deployment**, set **Source** to **GitHub Actions**
