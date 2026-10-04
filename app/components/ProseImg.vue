@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { resolveContentAssetPath } from '../composables/content-asset-path.mjs'
+
 const props = defineProps({
   src: {
     type: String,
@@ -11,8 +13,9 @@ const props = defineProps({
 })
 
 const attrs = useAttrs()
+const { app } = useRuntimeConfig()
 
-const resolvedSrc = computed(() => useContentAssetPath(props.src))
+const resolvedSrc = computed(() => resolveContentAssetPath(props.src, app.baseURL))
 </script>
 
 <template>
