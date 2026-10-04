@@ -16,9 +16,17 @@ useSeoMeta({
 </script>
 
 <template>
-  <article v-if="post">
-    <header>
-      <h1>{{ post.title }}</h1>
+  <article
+    v-if="post"
+    class="mx-auto max-w-4xl"
+  >
+    <header class="mb-8 space-y-4">
+      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand">
+        Article
+      </p>
+      <h1 class="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+        {{ post.title }}
+      </h1>
       <PostMeta
         :date="post.date"
         :reading-time="readingTime"
@@ -27,7 +35,9 @@ useSeoMeta({
       <TagList :tags="post.tags" />
     </header>
 
-    <ContentRenderer :value="post" />
+    <div class="prose prose-slate dark:prose-invert max-w-none rounded-3xl border border-border bg-surface p-5 shadow-sm sm:p-8 lg:p-10">
+      <ContentRenderer :value="post" />
+    </div>
 
     <PostNav
       :previous="navigation?.previous"
