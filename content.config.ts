@@ -1,4 +1,5 @@
-import { defineCollection, defineContentConfig, z } from '@nuxt/content'
+import { defineCollection, defineContentConfig } from '@nuxt/content'
+import { blogCollectionSchema, pagesCollectionSchema } from './content-schemas.mjs'
 
 export default defineContentConfig({
   collections: {
@@ -8,15 +9,7 @@ export default defineContentConfig({
         include: 'blog/**/*.md',
         prefix: '/blog',
       },
-      schema: z.object({
-        title: z.string(),
-        description: z.string().max(200),
-        date: z.coerce.date(),
-        updated: z.coerce.date().optional(),
-        tags: z.array(z.string()).default([]),
-        draft: z.boolean().default(false),
-        cover: z.string().optional(),
-      }),
+      schema: blogCollectionSchema,
     }),
     pages: defineCollection({
       type: 'page',
@@ -24,10 +17,7 @@ export default defineContentConfig({
         include: 'pages/**/*.md',
         prefix: '/',
       },
-      schema: z.object({
-        title: z.string(),
-        description: z.string().optional(),
-      }),
+      schema: pagesCollectionSchema,
     }),
   },
 })
