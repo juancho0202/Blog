@@ -36,3 +36,15 @@ test('blog frontmatter rejects invalid date', () => {
     assert.match(result.error.issues[0]?.path?.join('.') ?? '', /date/i)
   }
 })
+
+test('blog frontmatter requires date', () => {
+  const result = blogCollectionSchema.safeParse({
+    ...validBlogFrontmatter,
+    date: undefined,
+  })
+
+  assert.equal(result.success, false)
+  if (!result.success) {
+    assert.match(result.error.issues[0]?.path?.join('.') ?? '', /date/i)
+  }
+})
