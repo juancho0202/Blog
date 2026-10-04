@@ -5,6 +5,12 @@
         <NuxtLink to="/">
           Blog
         </NuxtLink>
+        <NuxtLink to="/blog">
+          Posts
+        </NuxtLink>
+        <NuxtLink to="/about">
+          About
+        </NuxtLink>
       </nav>
     </header>
     <main>
