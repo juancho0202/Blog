@@ -24,6 +24,10 @@ export default defineContentConfig({
         include: 'pages/**/*.md',
         prefix: '/',
       },
+      schema: z.object({
+        title: z.string(),
+        description: z.string().optional(),
+      }),
     }),
   },
 })
