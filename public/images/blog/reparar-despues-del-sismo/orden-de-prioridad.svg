@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 250" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12.5">
+  <rect width="640" height="250" fill="#fff"/>
+  <g>
+    <rect x="20" y="10" width="600" height="52" rx="8" fill="#B3261E"/>
+    <text x="40" y="34" fill="#fff" font-weight="800" font-size="16">1</text>
+    <text x="66" y="32" fill="#fff" font-weight="800">LO QUE PUEDE CAER SOBRE PERSONAS</text>
+    <text x="66" y="50" fill="#fff" font-size="11.5">Parapetos, antepechos, enchapes de fachada, muros sueltos, cielorrasos sobre circulaciones, tanques en altura</text>
+    <rect x="20" y="70" width="600" height="52" rx="8" fill="#C98A1B"/>
+    <text x="40" y="94" fill="#fff" font-weight="800" font-size="16">2</text>
+    <text x="66" y="92" fill="#fff" font-weight="800">LO QUE IMPIDE SALIR O GENERA OTRO RIESGO</text>
+    <text x="66" y="110" fill="#fff" font-size="11.5">Rutas de evacuación, puertas trabadas, vidrios sobre salidas, fugas de agua, instalaciones eléctricas dañadas</text>
+    <rect x="20" y="130" width="600" height="52" rx="8" fill="#2E5A70"/>
+    <text x="40" y="154" fill="#fff" font-weight="800" font-size="16">3</text>
+    <text x="66" y="152" fill="#fff" font-weight="800">LO QUE IMPIDE USAR LA EDIFICACIÓN</text>
+    <text x="66" y="170" fill="#fff" font-size="11.5">Baños, cocina, agua, energía, cerramiento de la vivienda, protección contra la lluvia</text>
+    <rect x="20" y="190" width="600" height="52" rx="8" fill="#8B9DA5"/>
+    <text x="40" y="214" fill="#fff" font-weight="800" font-size="16">4</text>
+    <text x="66" y="212" fill="#fff" font-weight="800">ACABADOS Y ESTÉTICA</text>
+    <text x="66" y="230" fill="#fff" font-size="11.5">Fisuras leves, pintura, enchapes interiores sin riesgo de caída</text>
+  </g>
+</svg>

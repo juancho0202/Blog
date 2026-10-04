@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12">
+  <rect width="640" height="260" fill="#fff"/>
+  <!-- fisurómetro -->
+  <text x="20" y="22" font-weight="800" fill="#1F2A30" font-size="14">1 · Fisurómetro (tarjeta)</text>
+  <rect x="20" y="40" width="190" height="150" rx="8" fill="#F4EFE7" stroke="#5B666C"/>
+  <g fill="#1F2A30">
+    <rect x="40" y="56" width="70" height="0.8"/><text x="120" y="60">0,1 mm</text>
+    <rect x="40" y="76" width="70" height="1.5"/><text x="120" y="80">0,2 mm</text>
+    <rect x="40" y="96" width="70" height="2.5"/><text x="120" y="101">0,3 mm</text>
+    <rect x="40" y="116" width="70" height="4"/><text x="120" y="122">0,5 mm</text>
+    <rect x="40" y="138" width="70" height="7"/><text x="120" y="145">1,0 mm</text>
+    <rect x="40" y="162" width="70" height="12"/><text x="120" y="172">2,0 mm</text>
+  </g>
+  <text x="20" y="212" fill="#5B666C">Se pone sobre la grieta y se busca</text>
+  <text x="20" y="227" fill="#5B666C">la línea del mismo grosor.</text>
+
+  <!-- testigo -->
+  <text x="240" y="22" font-weight="800" fill="#1F2A30" font-size="14">2 · Testigo de yeso</text>
+  <rect x="240" y="40" width="180" height="150" fill="#E8C3AE"/>
+  <path d="M250 50 L290 90 L300 112 L330 140 L345 172 L360 190" stroke="#1F2A30" stroke-width="2.5" fill="none"/>
+  <rect x="280" y="98" width="60" height="22" rx="3" fill="#fff" stroke="#999" transform="rotate(-8 310 109)"/>
+  <text x="290" y="114" font-size="10" fill="#B4532A" font-weight="700" transform="rotate(-8 310 109)">12-09-26</text>
+  <path d="M311 98 L307 121" stroke="#B3261E" stroke-width="1.5" transform="rotate(-8 310 109)"/>
+  <text x="240" y="212" fill="#5B666C">Si el testigo se raja, la grieta</text>
+  <text x="240" y="227" fill="#5B666C">se está moviendo (activa).</text>
+
+  <!-- foto con escala -->
+  <text x="450" y="22" font-weight="800" fill="#1F2A30" font-size="14">3 · Foto con escala</text>
+  <rect x="450" y="40" width="170" height="150" fill="#E8C3AE"/>
+  <path d="M470 60 L520 110 L560 170" stroke="#1F2A30" stroke-width="3" fill="none"/>
+  <rect x="540" y="120" width="70" height="14" fill="#fff" stroke="#1F2A30"/>
+  <g stroke="#1F2A30"><line x1="547" y1="120" x2="547" y2="127"/><line x1="554" y1="120" x2="554" y2="130"/><line x1="561" y1="120" x2="561" y2="127"/><line x1="568" y1="120" x2="568" y2="130"/><line x1="575" y1="120" x2="575" y2="127"/><line x1="582" y1="120" x2="582" y2="130"/><line x1="589" y1="120" x2="589" y2="127"/><line x1="596" y1="120" x2="596" y2="130"/></g>
+  <rect x="462" y="150" width="62" height="28" fill="#1F2A30"/>
+  <text x="468" y="162" fill="#fff" font-size="9">R-03 · Sala</text>
+  <text x="468" y="174" fill="#fff" font-size="9">Muro eje B</text>
+  <text x="450" y="212" fill="#5B666C">Regla o metro en la foto, y</text>
+  <text x="450" y="227" fill="#5B666C">un rótulo con recinto y fecha.</text>
+</svg>

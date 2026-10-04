@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13">
+  <defs><marker id="m" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9z" fill="#1F2A30"/></marker></defs>
+  <rect width="640" height="640" fill="#fff"/>
+  <!-- inicio -->
+  <rect x="20" y="10" width="330" height="40" rx="20" fill="#1F2A30"/>
+  <text x="185" y="35" fill="#fff" text-anchor="middle" font-weight="700">Encargo de reparación después del sismo</text>
+  <line x1="185" y1="50" x2="185" y2="68" stroke="#1F2A30" stroke-width="2" marker-end="url(#m)"/>
+
+  <!-- pregunta 1 -->
+  <g>
+    <rect x="20" y="70" width="330" height="76" rx="8" fill="#F4EFE7" stroke="#1F2A30" stroke-width="1.5"/>
+    <circle cx="44" cy="94" r="14" fill="#2E5A70"/><text x="44" y="99" fill="#fff" text-anchor="middle" font-weight="800">1</text>
+    <text x="66" y="92" font-weight="700" fill="#1F2A30">¿Hay daño en columnas, vigas, placas,</text>
+    <text x="66" y="109" font-weight="700" fill="#1F2A30">muros de carga, nudos o cimentación?</text>
+    <text x="66" y="128" fill="#5B666C" font-size="12">Grietas, deformaciones, desplomes, asentamientos</text>
+    <line x1="350" y1="108" x2="392" y2="108" stroke="#1F2A30" stroke-width="2" marker-end="url(#m)"/><text x="358" y="101" font-weight="700" fill="#B3261E">SÍ</text>
+    <rect x="394" y="76" width="230" height="64" rx="8" fill="#B3261E"/>
+    <text x="408" y="100" fill="#fff" font-weight="800">DETENER</text>
+    <text x="408" y="118" fill="#fff" font-size="12">Evaluación por ingeniero estructural.</text>
+    <text x="408" y="133" fill="#fff" font-size="12">Lo no estructural espera.</text>
+  </g>
+  <line x1="185" y1="146" x2="185" y2="186" stroke="#1F2A30" stroke-width="2" marker-end="url(#m)"/><text x="192" y="171" font-weight="700" fill="#3E7A4C">NO</text>
+
+  <!-- pregunta 2 -->
+  <g transform="translate(0,118)">
+    <rect x="20" y="70" width="330" height="76" rx="8" fill="#F4EFE7" stroke="#1F2A30" stroke-width="1.5"/>
+    <circle cx="44" cy="94" r="14" fill="#2E5A70"/><text x="44" y="99" fill="#fff" text-anchor="middle" font-weight="800">2</text>
+    <text x="66" y="92" font-weight="700" fill="#1F2A30">¿Es grupo de uso III o IV, o tiene</text>
+    <text x="66" y="109" font-weight="700" fill="#1F2A30">aviso amarillo o rojo?</text>
+    <text x="66" y="128" fill="#5B666C" font-size="12">Colegio, hospital, bomberos, policía…</text>
+    <line x1="350" y1="108" x2="392" y2="108" stroke="#1F2A30" stroke-width="2" marker-end="url(#m)"/><text x="358" y="101" font-weight="700" fill="#B3261E">SÍ</text>
+    <rect x="394" y="76" width="230" height="64" rx="8" fill="#C98A1B"/>
+    <text x="408" y="100" fill="#fff" font-weight="800">CONCEPTO PROFESIONAL</text>
+    <text x="408" y="118" fill="#fff" font-size="12">Antes de intervenir. Con aviso rojo,</text>
+    <text x="408" y="133" fill="#fff" font-size="12">no se ingresa sin autorización.</text>
+  </g>
+  <line x1="185" y1="264" x2="185" y2="304" stroke="#1F2A30" stroke-width="2" marker-end="url(#m)"/><text x="192" y="289" font-weight="700" fill="#3E7A4C">NO</text>
+
+  <!-- pregunta 3 -->
+  <g transform="translate(0,236)">
+    <rect x="20" y="70" width="330" height="76" rx="8" fill="#F4EFE7" stroke="#1F2A30" stroke-width="1.5"/>
+    <circle cx="44" cy="94" r="14" fill="#2E5A70"/><text x="44" y="99" fill="#fff" text-anchor="middle" font-weight="800">3</text>
+    <text x="66" y="92" font-weight="700" fill="#1F2A30">¿Cambia distribución, fachada, volumen,</text>
+    <text x="66" y="109" font-weight="700" fill="#1F2A30">uso, materiales o lugar de los muros?</text>
+    <text x="66" y="128" fill="#5B666C" font-size="12">O se reconstruye lo colapsado con otro diseño</text>
+    <line x1="350" y1="108" x2="392" y2="108" stroke="#1F2A30" stroke-width="2" marker-end="url(#m)"/><text x="358" y="101" font-weight="700" fill="#B3261E">SÍ</text>
+    <rect x="394" y="76" width="230" height="64" rx="8" fill="#2E5A70"/>
+    <text x="408" y="100" fill="#fff" font-weight="800">LICENCIA</text>
+    <text x="408" y="118" fill="#fff" font-size="12">Modificación, adecuación, reforzamiento</text>
+    <text x="408" y="133" fill="#fff" font-size="12">o reconstrucción. Curaduría o planeación.</text>
+  </g>
+  <line x1="185" y1="382" x2="185" y2="422" stroke="#1F2A30" stroke-width="2" marker-end="url(#m)"/><text x="192" y="407" font-weight="700" fill="#3E7A4C">NO</text>
+
+  <!-- pregunta 4 -->
+  <g transform="translate(0,354)">
+    <rect x="20" y="70" width="330" height="76" rx="8" fill="#F4EFE7" stroke="#1F2A30" stroke-width="1.5"/>
+    <circle cx="44" cy="94" r="14" fill="#2E5A70"/><text x="44" y="99" fill="#fff" text-anchor="middle" font-weight="800">4</text>
+    <text x="66" y="92" font-weight="700" fill="#1F2A30">¿Se interviene un bien común en</text>
+    <text x="66" y="109" font-weight="700" fill="#1F2A30">propiedad horizontal?</text>
+    <text x="66" y="128" fill="#5B666C" font-size="12">Fachada, cubierta, muros de cierre, redes comunes</text>
+    <line x1="350" y1="108" x2="392" y2="108" stroke="#1F2A30" stroke-width="2" marker-end="url(#m)"/><text x="358" y="101" font-weight="700" fill="#B3261E">SÍ</text>
+    <rect x="394" y="76" width="230" height="64" rx="8" fill="#5B666C"/>
+    <text x="408" y="100" fill="#fff" font-weight="800">AUTORIZACIÓN DE LA PH</text>
+    <text x="408" y="118" fill="#fff" font-size="12">Administración o asamblea, según</text>
+    <text x="408" y="133" fill="#fff" font-size="12">el reglamento de la copropiedad.</text>
+  </g>
+  <line x1="185" y1="500" x2="185" y2="540" stroke="#1F2A30" stroke-width="2" marker-end="url(#m)"/><text x="192" y="525" font-weight="700" fill="#3E7A4C">NO</text>
+
+  <!-- resultado -->
+  <rect x="20" y="542" width="604" height="84" rx="10" fill="#3E7A4C"/>
+  <circle cx="44" cy="566" r="14" fill="#fff"/><text x="44" y="571" fill="#3E7A4C" text-anchor="middle" font-weight="800">5</text>
+  <text x="66" y="566" fill="#fff" font-weight="800" font-size="14">REPARACIÓN LOCATIVA · sin licencia</text>
+  <text x="66" y="588" fill="#fff" font-size="12.5">Pero ejecutada conforme a la NSR-10 (juntas, anclajes, holguras), con registro fotográfico y acta.</text>
+  <text x="66" y="607" fill="#fff" font-size="12.5">Quien la ejecuta responde por ella. Si una respuesta fue «no sé», trátala como «sí».</text>
+</svg>

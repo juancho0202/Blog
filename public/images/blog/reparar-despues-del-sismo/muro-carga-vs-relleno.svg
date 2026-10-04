@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 290" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12">
+  <defs>
+    <pattern id="l" width="18" height="9" patternUnits="userSpaceOnUse"><rect width="18" height="9" fill="#E2A483"/><path d="M0 .5H18M0 4.5H18M4.5 .5V4.5M13.5 4.5V9" stroke="#B4532A" stroke-width=".8"/></pattern>
+  </defs>
+  <rect width="640" height="290" fill="#fff"/>
+  <!-- Mampostería confinada -->
+  <text x="20" y="22" font-weight="800" fill="#B3261E" font-size="14">Mampostería confinada</text>
+  <text x="20" y="40" fill="#5B666C">Los muros SON la estructura (muros de carga)</text>
+  <rect x="20" y="230" width="270" height="10" fill="#EAE2D5"/>
+  <rect x="30" y="70" width="250" height="160" fill="url(#l)"/>
+  <rect x="30" y="70" width="10" height="160" fill="#8B9DA5"/>
+  <rect x="150" y="70" width="10" height="160" fill="#8B9DA5"/>
+  <rect x="270" y="70" width="10" height="160" fill="#8B9DA5"/>
+  <rect x="26" y="62" width="258" height="12" fill="#8B9DA5"/>
+  <rect x="20" y="54" width="270" height="8" fill="#5B666C"/>
+  <rect x="60" y="110" width="60" height="50" fill="#BFDCE8" stroke="#8B9DA5" stroke-width="3"/>
+  <rect x="164" y="92" width="112" height="32" fill="#fff" opacity=".9"/><text x="168" y="104" fill="#1F2A30" font-size="11">columneta delgada,</text>
+  <text x="168" y="118" fill="#1F2A30" font-size="11">del ancho del muro</text>
+  <line x1="166" y1="108" x2="160" y2="130" stroke="#1F2A30"/>
+  <rect x="164" y="184" width="96" height="32" fill="#fff" opacity=".9"/><text x="168" y="196" fill="#1F2A30" font-size="11">placa apoyada</text>
+  <text x="168" y="210" fill="#1F2A30" font-size="11">sobre los muros</text>
+  <text x="20" y="262" fill="#1F2A30" font-weight="600">Típico: casas de 1 a 3 pisos (Título E)</text>
+  <text x="20" y="280" fill="#B3261E" font-weight="700">Grietas en estos muros = daño estructural</text>
+
+  <!-- Pórtico -->
+  <text x="350" y="22" font-weight="800" fill="#2E5A70" font-size="14">Pórticos con muros de relleno</text>
+  <text x="350" y="40" fill="#5B666C">El esqueleto de concreto sostiene; el muro rellena</text>
+  <rect x="345" y="230" width="280" height="10" fill="#EAE2D5"/>
+  <rect x="380" y="82" width="210" height="148" fill="url(#l)"/>
+  <rect x="356" y="62" width="24" height="168" fill="#2E5A70"/>
+  <rect x="590" y="62" width="24" height="168" fill="#2E5A70"/>
+  <rect x="350" y="56" width="270" height="26" fill="#2E5A70"/>
+  <rect x="396" y="116" width="128" height="46" fill="#fff" opacity=".9"/><text x="400" y="128" fill="#1F2A30" font-size="11">columnas y vigas</text>
+  <text x="400" y="142" fill="#1F2A30" font-size="11">gruesas, a la vista o</text>
+  <text x="400" y="156" fill="#1F2A30" font-size="11">sobresaliendo del muro</text>
+  <text x="350" y="262" fill="#1F2A30" font-weight="600">Típico: edificios de 4 o más pisos</text>
+  <text x="350" y="280" fill="#2E5A70" font-weight="700">Grietas en el relleno = no estructural*</text>
+</svg>
