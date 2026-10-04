@@ -14,3 +14,8 @@ test('resolveContentAssetPath leaves non-root paths untouched', () => {
   assert.equal(resolveContentAssetPath('images/blog/notebook.svg', '/Blog/'), 'images/blog/notebook.svg')
   assert.equal(resolveContentAssetPath('https://example.com/a.svg', '/Blog/'), 'https://example.com/a.svg')
 })
+
+test('resolveContentAssetPath keeps root route semantics', () => {
+  assert.equal(resolveContentAssetPath('/', '/'), '/')
+  assert.equal(resolveContentAssetPath('/', '/Blog/'), '/Blog/')
+})

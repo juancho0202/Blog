@@ -7,6 +7,10 @@ export function resolveContentAssetPath(src, baseURL = '/') {
     return src
   }
 
+  if (src === '/') {
+    return baseURL.endsWith('/') ? baseURL : `${baseURL}/`
+  }
+
   const normalizedBase = baseURL.endsWith('/') ? baseURL.slice(0, -1) : baseURL
   return `${normalizedBase}${src}`
 }
