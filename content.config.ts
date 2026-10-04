@@ -20,7 +20,10 @@ export default defineContentConfig({
     }),
     pages: defineCollection({
       type: 'page',
-      source: 'pages/**/*.md',
+      source: {
+        include: 'pages/**/*.md',
+        prefix: '/',
+      },
     }),
   },
 })
