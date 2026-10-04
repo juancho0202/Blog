@@ -15,8 +15,8 @@ export function usePostNavigation(path: string) {
     const [previous, next] = await surroundingsQuery
 
     return {
-      previous: previous as PostNavigationItem | undefined,
-      next: next as PostNavigationItem | undefined,
+      previous: (previous ?? undefined) as PostNavigationItem | undefined,
+      next: (next ?? undefined) as PostNavigationItem | undefined,
     }
   })
 }

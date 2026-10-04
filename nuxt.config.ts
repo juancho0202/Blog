@@ -30,7 +30,7 @@ async function getPrerenderPostRoutes(): Promise<string[]> {
   const files = await getAllMarkdownFiles(contentDir)
   const routes = await Promise.all(files.map(async (file) => {
     const source = await readFile(file, 'utf8')
-    const frontmatterMatch = source.match(/^---\n([\s\S]*?)\n---/)
+    const frontmatterMatch = source.match(/^---\r?\n([\s\S]*?)\r?\n---/)
     const frontmatter = frontmatterMatch?.[1] ?? ''
     const isDraft = getFrontmatterValue(frontmatter, 'draft') === 'true'
 

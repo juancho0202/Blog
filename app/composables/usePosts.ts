@@ -11,6 +11,7 @@ export type PostListItem = {
   tags?: string[]
   cover?: string
   draft?: boolean
+  body?: unknown
 }
 
 export function usePosts(options: UsePostsOptions = {}) {
@@ -20,7 +21,7 @@ export function usePosts(options: UsePostsOptions = {}) {
 
   return useAsyncData(key, async () => {
     const posts = await queryCollection('blog')
-      .select('path', 'title', 'description', 'date', 'tags', 'cover', 'draft')
+      .select('path', 'title', 'description', 'date', 'tags', 'cover', 'draft', 'body')
       .order('date', 'DESC')
       .all() as PostListItem[]
 

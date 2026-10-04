@@ -1,12 +1,11 @@
 <script setup lang="ts">
-import { toRef } from 'vue'
 import type { PostListItem } from '../composables/usePosts'
 
 const props = defineProps<{
   post: PostListItem
 }>()
 
-const readingTime = useReadingTime(toRef(props.post, 'description'))
+const readingTime = useReadingTime(computed(() => props.post.body))
 </script>
 
 <template>
