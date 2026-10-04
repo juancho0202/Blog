@@ -7,7 +7,6 @@ tags:
   - announcement
   - nuxt
 draft: false
-cover: /images/blog/introducing-cover.svg
 path: /blog/introducing-the-blog
 ---
 
@@ -22,8 +21,6 @@ This blog shares notes about building and maintaining a static Nuxt site.
 > Keep posts short, useful, and easy to scan.
 
 You can read the Nuxt docs at [nuxt.com](https://nuxt.com).
-
-![Notebook on a desk](/images/blog/notebook.svg)
 
 | Topic | Why it matters |
 | --- | --- |
