@@ -6,7 +6,6 @@ tags:
   - workflow
   - content
 draft: false
-cover: images/blog/workflow-cover.jpg
 path: /blog/nuxt-content-workflow
 ---
 

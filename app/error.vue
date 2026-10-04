@@ -1,5 +1,10 @@
 <script setup lang="ts">
-const props = defineProps(['error'])
+const props = defineProps({
+  error: {
+    type: Object,
+    default: null,
+  },
+})
 
 const statusCode = computed(() => props.error?.statusCode ?? 500)
 
