@@ -1,5 +1,5 @@
-import { defineCollection, defineContentConfig } from '@nuxt/content'
-import { blogCollectionSchema, pagesCollectionSchema } from './content-schemas.mjs'
+import { defineCollection, defineContentConfig, z } from '@nuxt/content'
+import { createBlogCollectionSchema, createPagesCollectionSchema } from './content-schemas.mjs'
 
 export default defineContentConfig({
   collections: {
@@ -9,7 +9,7 @@ export default defineContentConfig({
         include: 'blog/**/*.md',
         prefix: '/blog',
       },
-      schema: blogCollectionSchema,
+      schema: createBlogCollectionSchema(z),
     }),
     pages: defineCollection({
       type: 'page',
@@ -17,7 +17,7 @@ export default defineContentConfig({
         include: 'pages/**/*.md',
         prefix: '/',
       },
-      schema: pagesCollectionSchema,
+      schema: createPagesCollectionSchema(z),
     }),
   },
 })

@@ -1,6 +1,9 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
-import { blogCollectionSchema } from '../content-schemas.mjs'
+import { z } from 'zod'
+import { createBlogCollectionSchema } from '../content-schemas.mjs'
+
+const blogCollectionSchema = createBlogCollectionSchema(z)
 
 const validBlogFrontmatter = {
   title: 'Schema validation sample',
