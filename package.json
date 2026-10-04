@@ -7,6 +7,7 @@
     "dev": "nuxt dev",
     "build": "nuxt build",
     "generate": "nuxt generate",
+    "test": "node --test tests/content-frontmatter.test.mjs",
     "preview": "nuxt preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -15,6 +16,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/content": "^3.16.1",
     "nuxt": "^4.5.2",
     "vue": "^3.5.43",
     "vue-router": "^5.3.1"
@@ -23,6 +25,7 @@
     "@nuxt/eslint": "^1.17.0",
     "eslint": "^9.39.5",
     "lefthook": "^1.13.6",
-    "vue-tsc": "^3.3.12"
+    "vue-tsc": "^3.3.12",
+    "zod": "^4.6.5"
   }
 }
