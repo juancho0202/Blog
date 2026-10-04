@@ -18,9 +18,12 @@ defineProps<{
       </h1>
       <p>{{ error.statusMessage || 'Please try again later.' }}</p>
       <p>
-        <NuxtLink to="/">
+        <button
+          type="button"
+          @click="clearError({ redirect: '/' })"
+        >
           Go back home
-        </NuxtLink>
+        </button>
       </p>
     </section>
   </NuxtLayout>
