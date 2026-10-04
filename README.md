@@ -33,8 +33,18 @@ The blog collection validates frontmatter with this schema:
 - `draft` (boolean, defaults to `false`)
 - `cover` (optional string)
 
+When querying published posts, filter drafts out explicitly:
+
+```ts
+const publishedPosts = await queryCollection('blog')
+  .where('draft', '!=', true)
+  .all()
+```
+
 To keep URLs as `/blog/slug` (without the date prefix), set `path` in frontmatter:
 
 ```yaml
 path: /blog/my-post-slug
 ```
+
+`path` is a Nuxt Content built-in field, so it is intentionally not part of the collection schema above.
