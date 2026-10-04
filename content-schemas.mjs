@@ -1,4 +1,4 @@
-import { z } from '@nuxt/content'
+import { z } from 'zod'
 
 export const blogCollectionSchema = z.object({
   title: z.string(),
