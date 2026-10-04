@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 260" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13">
+  <rect width="660" height="260" fill="#fff"/>
+  <!-- asbesto -->
+  <g transform="translate(10,10)">
+    <rect width="200" height="240" rx="10" fill="#FBE4E1"/>
+    <path d="M30 120 Q50 100 70 120 T110 120 T150 120 T170 120 L170 150 L30 150 Z" fill="#B9B4AA" stroke="#7E776B" stroke-width="2"/>
+    <path d="M90 104 L96 130 L88 150" stroke="#1F2A30" stroke-width="2" fill="none"/>
+    <circle cx="140" cy="76" r="26" fill="none" stroke="#B3261E" stroke-width="6"/>
+    <line x1="122" y1="58" x2="158" y2="94" stroke="#B3261E" stroke-width="6"/>
+    <path d="M128 72 l8 -8 l4 4 l-8 8 z M132 76 l14 14" stroke="#1F2A30" stroke-width="3" fill="none"/>
+    <text x="100" y="186" text-anchor="middle" font-weight="800" fill="#B3261E">Asbesto-cemento</text>
+    <text x="100" y="206" text-anchor="middle" fill="#1F2A30" font-size="12">No cortar, perforar ni partir.</text>
+    <text x="100" y="222" text-anchor="middle" fill="#1F2A30" font-size="12">Humedecer y dejar a expertos.</text>
+  </g>
+  <!-- sílice -->
+  <g transform="translate(230,10)">
+    <rect width="200" height="240" rx="10" fill="#E1ECF1"/>
+    <rect x="30" y="110" width="80" height="40" fill="#D9865D"/>
+    <circle cx="110" cy="96" r="22" fill="#8B9DA5" stroke="#5B666C" stroke-width="3"/>
+    <g fill="#5DA9D6"><circle cx="90" cy="70" r="3"/><circle cx="100" cy="62" r="3"/><circle cx="112" cy="58" r="3"/><circle cx="84" cy="80" r="3"/></g>
+    <path d="M140 60 Q150 40 170 50 L172 82 Q150 94 140 82 Z" fill="#fff" stroke="#2E5A70" stroke-width="3"/>
+    <text x="100" y="186" text-anchor="middle" font-weight="800" fill="#2E5A70">Polvo de sílice</text>
+    <text x="100" y="206" text-anchor="middle" fill="#1F2A30" font-size="12">Cortar en húmedo y usar</text>
+    <text x="100" y="222" text-anchor="middle" fill="#1F2A30" font-size="12">protección respiratoria.</text>
+  </g>
+  <!-- escombros -->
+  <g transform="translate(450,10)">
+    <rect width="200" height="240" rx="10" fill="#E3F0E5"/>
+    <rect x="30" y="100" width="40" height="50" fill="#D9865D"/><rect x="80" y="100" width="40" height="50" fill="#8B9DA5"/><rect x="130" y="100" width="40" height="50" fill="#B88A5B"/>
+    <path d="M30 100 L70 100 M80 100 L120 100 M130 100 L170 100" stroke="#1F2A30" stroke-width="3"/>
+    <rect x="70" y="30" width="60" height="50" fill="none" stroke="#5B666C" stroke-width="3"/>
+    <path d="M84 50 l14 14 l-4 4 l-14 -14 z" fill="#D9865D"/>
+    <circle cx="100" cy="55" r="34" fill="none" stroke="#B3261E" stroke-width="5"/>
+    <line x1="76" y1="31" x2="124" y2="79" stroke="#B3261E" stroke-width="5"/>
+    <text x="100" y="186" text-anchor="middle" font-weight="800" fill="#3E7A4C">Escombros</text>
+    <text x="100" y="206" text-anchor="middle" fill="#1F2A30" font-size="12">Separar y bajar en recipientes.</text>
+    <text x="100" y="222" text-anchor="middle" fill="#1F2A30" font-size="12">Nunca lanzar por la ventana.</text>
+  </g>
+</svg>

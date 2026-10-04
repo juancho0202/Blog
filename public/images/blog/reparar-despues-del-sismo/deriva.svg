@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13">
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#B4532A"/></marker>
+    <marker id="b" markerWidth="8" markerHeight="8" refX="1" refY="4" orient="auto"><path d="M8 0L0 4L8 8z" fill="#B4532A"/></marker>
+  </defs>
+  <rect width="640" height="300" fill="#fff"/>
+  <!-- en reposo -->
+  <text x="60" y="24" font-weight="700" fill="#1F2A30">En reposo</text>
+  <rect x="40" y="250" width="200" height="12" fill="#EAE2D5"/>
+  <rect x="60" y="60" width="14" height="190" fill="#2E5A70"/>
+  <rect x="206" y="60" width="14" height="190" fill="#2E5A70"/>
+  <rect x="50" y="48" width="180" height="14" fill="#2E5A70"/>
+  <rect x="74" y="62" width="132" height="188" fill="#E8C3AE"/>
+  <!-- deformado -->
+  <text x="360" y="24" font-weight="700" fill="#1F2A30">Durante el sismo</text>
+  <rect x="340" y="250" width="240" height="12" fill="#EAE2D5"/>
+  <line x1="360" y1="60" x2="360" y2="250" stroke="#ccc" stroke-dasharray="4 4"/>
+  <path d="M360 250 L374 250 L414 60 L400 60 Z" fill="#2E5A70"/>
+  <path d="M506 250 L520 250 L560 60 L546 60 Z" fill="#2E5A70"/>
+  <rect x="390" y="48" width="180" height="14" fill="#2E5A70"/>
+  <path d="M374 250 L506 250 L546 62 L414 62 Z" fill="#E8C3AE"/>
+  <!-- puntal de compresión y grieta -->
+  <line x1="380" y1="246" x2="540" y2="68" stroke="#B4532A" stroke-width="10" opacity=".35"/>
+  <path d="M420 68 L440 110 L452 140 L470 170 L482 200 L500 246" stroke="#1F2A30" stroke-width="3" fill="none"/>
+  <text x="478" y="146" fill="#B4532A" font-weight="600" font-size="12">compresión</text>
+  <text x="430" y="226" fill="#1F2A30" font-size="12" font-weight="600">grieta</text>
+  <!-- delta -->
+  <line x1="362" y1="40" x2="398" y2="40" stroke="#B4532A" stroke-width="2" marker-end="url(#a)" marker-start="url(#b)"/>
+  <text x="372" y="34" fill="#B4532A" font-weight="800" font-size="15">Δ</text>
+  <!-- h -->
+  <line x1="600" y1="62" x2="600" y2="250" stroke="#5B666C" stroke-width="1.5"/>
+  <line x1="592" y1="62" x2="608" y2="62" stroke="#5B666C"/><line x1="592" y1="250" x2="608" y2="250" stroke="#5B666C"/>
+  <text x="608" y="160" fill="#5B666C" font-weight="700" font-size="15">h</text>
+  <text x="250" y="290" fill="#1F2A30" font-weight="700">Deriva = Δ ÷ h</text>
+</svg>

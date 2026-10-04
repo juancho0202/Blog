@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13">
+  <defs>
+    <pattern id="l" width="20" height="10" patternUnits="userSpaceOnUse"><rect width="20" height="10" fill="#D9865D"/><path d="M0 .5H20M0 5.5H20M5 .5V5.5M15 5.5V10" stroke="#A8471F" stroke-width=".8"/></pattern>
+  </defs>
+  <rect width="660" height="400" fill="#fff"/>
+  <!-- edificio -->
+  <rect x="40" y="370" width="360" height="12" fill="#EAE2D5"/>
+  <g>
+    <rect x="70" y="40" width="290" height="330" fill="#F4EFE7"/>
+    <g fill="#2E5A70">
+      <rect x="62" y="40" width="12" height="330"/><rect x="356" y="40" width="12" height="330"/><rect x="209" y="40" width="10" height="330"/>
+      <rect x="56" y="34" width="318" height="10"/><rect x="56" y="100" width="318" height="8"/><rect x="56" y="166" width="318" height="8"/><rect x="56" y="232" width="318" height="8"/><rect x="56" y="298" width="318" height="8"/>
+    </g>
+    <!-- fachada enchape caída -->
+    <rect x="368" y="44" width="10" height="190" fill="url(#l)"/>
+    <rect x="368" y="108" width="10" height="40" fill="#fff" stroke="#B3261E" stroke-dasharray="3 2"/>
+    <g fill="#D9865D"><rect x="410" y="352" width="14" height="7" transform="rotate(20 417 355)"/><rect x="430" y="360" width="12" height="6" transform="rotate(-15 436 363)"/><rect x="396" y="362" width="10" height="6"/></g>
+    <!-- 502 muro cocina -->
+    <rect x="150" y="44" width="8" height="56" fill="url(#l)"/>
+    <path d="M150 52 L158 70 L150 88" stroke="#1F2A30" stroke-width="2" fill="none"/>
+    <!-- 201 baño cerámica -->
+    <rect x="84" y="244" width="40" height="54" fill="#DCE8EE" stroke="#8B9DA5"/>
+    <g fill="#fff" stroke="#8B9DA5"><rect x="88" y="250" width="8" height="8"/><rect x="98" y="250" width="8" height="8"/><rect x="88" y="260" width="8" height="8"/></g>
+    <g fill="#DCE8EE" stroke="#8B9DA5"><rect x="96" y="292" width="8" height="6" transform="rotate(25 100 295)"/><rect x="110" y="292" width="8" height="6"/></g>
+  </g>
+  <!-- etiquetas -->
+  <g>
+    <rect x="440" y="40" width="200" height="86" rx="8" fill="#FBE4E1" stroke="#B3261E"/>
+    <text x="452" y="62" font-weight="800" fill="#B3261E">502 · Tumbar muro</text>
+    <text x="452" y="82" fill="#1F2A30" font-size="12">Licencia de modificación,</text>
+    <text x="452" y="98" fill="#1F2A30" font-size="12">concepto estructural y</text>
+    <text x="452" y="114" fill="#1F2A30" font-size="12">autorización de la PH</text>
+    <line x1="440" y1="70" x2="160" y2="72" stroke="#B3261E" stroke-dasharray="4 3"/>
+    <rect x="440" y="150" width="200" height="86" rx="8" fill="#FDF1CF" stroke="#C98A1B"/>
+    <text x="452" y="172" font-weight="800" fill="#8A6400">Fachada · Enchape</text>
+    <text x="452" y="192" fill="#1F2A30" font-size="12">Aislar el andén ya; PH</text>
+    <text x="452" y="208" fill="#1F2A30" font-size="12">contrata; reponer con</text>
+    <text x="452" y="224" fill="#1F2A30" font-size="12">anclaje diseñado</text>
+    <line x1="440" y1="190" x2="380" y2="130" stroke="#C98A1B" stroke-dasharray="4 3"/>
+    <rect x="440" y="260" width="200" height="70" rx="8" fill="#E3F0E5" stroke="#3E7A4C"/>
+    <text x="452" y="282" font-weight="800" fill="#3E7A4C">201 · Cerámica del baño</text>
+    <text x="452" y="302" fill="#1F2A30" font-size="12">Reparación locativa:</text>
+    <text x="452" y="318" fill="#1F2A30" font-size="12">puede empezar el lunes</text>
+    <line x1="440" y1="290" x2="126" y2="270" stroke="#3E7A4C" stroke-dasharray="4 3"/>
+  </g>
+</svg>

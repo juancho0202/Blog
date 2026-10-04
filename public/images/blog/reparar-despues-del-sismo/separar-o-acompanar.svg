@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" font-family="Inter, Helvetica, Arial, sans-serif" font-size="12.5">
+  <defs>
+    <pattern id="l" width="24" height="12" patternUnits="userSpaceOnUse"><rect width="24" height="12" fill="#E2A483"/><path d="M0 .5H24M0 6.5H24M6 .5V6.5M18 6.5V12.5" stroke="#B4532A" stroke-width="1"/></pattern>
+    <pattern id="r" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#E2A483"/><path d="M0 10L10 0" stroke="#B4532A" stroke-width=".8"/></pattern>
+  </defs>
+  <rect width="640" height="300" fill="#fff"/>
+  <!-- A: separar -->
+  <text x="20" y="22" font-weight="800" fill="#B4532A" font-size="15">1 · SEPARAR</text>
+  <text x="20" y="40" fill="#5B666C">El muro no toca la estructura: junta flexible y anclaje deslizante</text>
+  <rect x="30" y="62" width="16" height="200" fill="#2E5A70"/>
+  <rect x="264" y="62" width="16" height="200" fill="#2E5A70"/>
+  <rect x="22" y="50" width="266" height="14" fill="#2E5A70"/>
+  <rect x="22" y="262" width="266" height="12" fill="#2E5A70"/>
+  <rect x="58" y="76" width="194" height="186" fill="url(#l)"/>
+  <!-- juntas -->
+  <rect x="46" y="64" width="12" height="198" fill="#E8A83A"/>
+  <rect x="252" y="64" width="12" height="198" fill="#E8A83A"/>
+  <rect x="58" y="64" width="194" height="12" fill="#E8A83A"/>
+  <!-- anclajes -->
+  <g fill="#1F2A30"><rect x="96" y="64" width="4" height="22"/><rect x="155" y="64" width="4" height="22"/><rect x="214" y="64" width="4" height="22"/></g>
+  <text x="300" y="80" fill="#1F2A30" font-weight="600">Junta flexible</text><line x1="298" y1="76" x2="262" y2="110" stroke="#1F2A30"/>
+  <text x="300" y="112" fill="#1F2A30" font-weight="600">Anclaje que deja</text><text x="300" y="127" fill="#1F2A30" font-weight="600">deslizar</text><line x1="298" y1="108" x2="220" y2="78" stroke="#1F2A30"/>
+  <!-- B: acompañar -->
+  <text x="350" y="22" font-weight="800" fill="#2E5A70" font-size="15">2 · ACOMPAÑAR</text>
+  <text x="350" y="40" fill="#5B666C">El elemento se diseña para deformarse con la estructura</text>
+  <g transform="translate(330,0)">
+    <path d="M30 262 L46 262 L66 62 L50 62 Z" fill="#2E5A70"/>
+    <path d="M264 262 L280 262 L300 62 L284 62 Z" fill="#2E5A70"/>
+    <rect x="42" y="50" width="266" height="14" fill="#2E5A70"/>
+    <rect x="22" y="262" width="266" height="12" fill="#2E5A70"/>
+    <path d="M46 262 L264 262 L284 64 L66 64 Z" fill="#DCE8EE"/>
+    <!-- paneles articulados -->
+    <g stroke="#2E5A70" stroke-width="2" fill="#fff">
+      <path d="M58 250 L120 250 L136 82 L74 82 Z"/>
+      <path d="M128 250 L190 250 L206 82 L144 82 Z"/>
+      <path d="M198 250 L258 250 L274 82 L214 82 Z"/>
+    </g>
+    <text x="90" y="170" fill="#2E5A70" font-size="11" font-weight="600">panel</text>
+  </g>
+  <text x="350" y="292" fill="#5B666C" font-size="11">Ej.: paneles livianos con conexiones que giran, muros reforzados diseñados</text>
+  <text x="20" y="292" fill="#5B666C" font-size="11">Es la solución habitual en reparaciones de mampostería</text>
+</svg>
