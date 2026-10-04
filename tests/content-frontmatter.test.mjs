@@ -21,7 +21,7 @@ test('blog frontmatter requires title', () => {
 
   assert.equal(result.success, false)
   if (!result.success) {
-    assert.match(result.error.issues[0]?.path.join('.'), /title/i)
+    assert.match(result.error.issues[0]?.path?.join('.') ?? '', /title/i)
   }
 })
 
@@ -33,6 +33,6 @@ test('blog frontmatter rejects invalid date', () => {
 
   assert.equal(result.success, false)
   if (!result.success) {
-    assert.match(result.error.issues[0]?.path.join('.'), /date/i)
+    assert.match(result.error.issues[0]?.path?.join('.') ?? '', /date/i)
   }
 })
