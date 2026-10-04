@@ -1,31 +1,30 @@
 <script setup lang="ts">
-const props = defineProps({
+defineProps<{
   error: {
-    type: Object,
-    default: null,
-  },
-})
-
-const statusCode = computed(() => props.error?.statusCode ?? 500)
-
-const message = computed(() => {
-  if (statusCode.value === 404) {
-    return 'The page you are looking for does not exist.'
+    statusCode?: number
+    statusMessage?: string
   }
-
-  return 'Something went wrong while loading this page.'
-})
+}>()
 </script>
 
 <template>
-  <div>
-    <h1>{{ statusCode }}</h1>
-    <p>{{ message }}</p>
-    <button
-      type="button"
-      @click="clearError({ redirect: '/' })"
-    >
-      Go back home
-    </button>
-  </div>
+  <NuxtLayout>
+    <section>
+      <h1 v-if="error.statusCode === 404">
+        Page not found
+      </h1>
+      <h1 v-else>
+        Something went wrong
+      </h1>
+      <p>{{ error.statusMessage || 'Please try again later.' }}</p>
+      <p>
+        <button
+          type="button"
+          @click="clearError({ redirect: '/' })"
+        >
+          Go back home
+        </button>
+      </p>
+    </section>
+  </NuxtLayout>
 </template>
