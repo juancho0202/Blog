@@ -21,11 +21,11 @@ const message = computed(() => {
   <div>
     <h1>{{ statusCode }}</h1>
     <p>{{ message }}</p>
-    <NuxtLink
-      to="/"
-      @click.prevent="clearError({ redirect: '/' })"
+    <button
+      type="button"
+      @click="clearError({ redirect: '/' })"
     >
       Go back home
-    </NuxtLink>
+    </button>
   </div>
 </template>
