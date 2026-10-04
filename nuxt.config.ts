@@ -90,4 +90,19 @@ export default defineNuxtConfig({
       typescript: true,
     },
   },
+  fonts: {
+    defaults: {
+      weights: ['400', '500', '600', '700', '800'],
+    },
+    families: [
+      { name: 'Inter', provider: 'fontsource', weights: [400, 500, 600, 700, 800] },
+      { name: 'JetBrains Mono', provider: 'fontsource', weights: [400, 500, 600, 700] },
+    ],
+  },
+  icon: {
+    provider: 'none',
+    clientBundle: {
+      scan: true,
+    },
+  },
 })
