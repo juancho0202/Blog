@@ -4,17 +4,18 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Brand colors - Construction yellow over dark */
+  /* Brand colors - Construction yellow */
   --color-brand: #FFD60A;
   --color-brand-strong: #FFC300;
   --color-accent: #FF8C00;
-  --color-surface: #0F0F0F;
-  --color-surface-muted: #1A1A1A;
-  --color-elevated: #2D2D2D;
-  --color-border: #3D3D3D;
-  --color-foreground: #F5F5F5;
-  --color-foreground-muted: #B0B0B0;
-  --color-code-bg: #0F0F0F;
+  /* Light mode surfaces */
+  --color-surface: #FAFAF8;
+  --color-surface-muted: #F0F0ED;
+  --color-elevated: #EFEFEB;
+  --color-border: #E0DFDA;
+  --color-foreground: #2D2D2D;
+  --color-foreground-muted: #5A5A5A;
+  --color-code-bg: #2D2D2D;
 
   /* Font stacks */
   --font-sans: "Inter", "Segoe UI", sans-serif;
@@ -22,13 +23,14 @@
 }
 
 .dark {
-  --color-surface: #0A0A0A;
-  --color-surface-muted: #141414;
-  --color-elevated: #1F1F1F;
-  --color-border: #333333;
-  --color-foreground: #FFFFFF;
-  --color-foreground-muted: #CCCCCC;
-  --color-code-bg: #0A0A0A;
+  /* Dark mode surfaces */
+  --color-surface: #0F0F0F;
+  --color-surface-muted: #1A1A1A;
+  --color-elevated: #2D2D2D;
+  --color-border: #3D3D3D;
+  --color-foreground: #F5F5F5;
+  --color-foreground-muted: #B0B0B0;
+  --color-code-bg: #0F0F0F;
 }
 
 html {
@@ -41,7 +43,7 @@ html.dark {
 
 body {
   min-height: 100vh;
-  background: radial-gradient(circle at top, rgba(255, 214, 10, 0.12), transparent 32%), var(--color-surface);
+  background: radial-gradient(circle at top, rgba(255, 214, 10, 0.08), transparent 32%), var(--color-surface);
   color: var(--color-foreground);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
