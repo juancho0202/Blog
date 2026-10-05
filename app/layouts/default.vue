@@ -4,7 +4,7 @@
       href="#content"
       class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-surface-muted focus:px-4 focus:py-2 focus:text-foreground"
     >
-      Skip to content
+      Ir al contenido
     </a>
 
     <header class="sticky top-0 z-40 border-b border-border/80 bg-surface/80 backdrop-blur-sm">
@@ -13,7 +13,7 @@
           to="/"
           class="text-lg font-semibold tracking-tight text-foreground transition-colors hover:text-brand"
         >
-          Blog
+          Apuntes de Obra
         </NuxtLink>
 
         <nav
@@ -25,21 +25,21 @@
             class="rounded-full px-3 py-1.5 text-sm font-medium text-foreground-muted transition-colors hover:text-brand"
             exact-active-class="bg-surface text-foreground shadow-sm"
           >
-            Home
+            Inicio
           </NuxtLink>
           <NuxtLink
             to="/blog"
             class="rounded-full px-3 py-1.5 text-sm font-medium text-foreground-muted transition-colors hover:text-brand"
             active-class="bg-surface text-foreground shadow-sm"
           >
-            Blog
+            Artículos
           </NuxtLink>
           <NuxtLink
             to="/about"
             class="rounded-full px-3 py-1.5 text-sm font-medium text-foreground-muted transition-colors hover:text-brand"
             active-class="bg-surface text-foreground shadow-sm"
           >
-            About
+            Acerca de
           </NuxtLink>
         </nav>
 
@@ -56,7 +56,7 @@
 
     <footer class="border-t border-border bg-surface-muted/80">
       <div class="page-shell flex flex-col items-center justify-between gap-4 py-6 text-sm text-foreground-muted sm:flex-row">
-        <p>© {{ new Date().getFullYear() }} Blog</p>
+        <p>© {{ new Date().getFullYear() }} Apuntes de Obra</p>
         <a
           href="https://github.com/juancho0202/Blog"
           target="_blank"

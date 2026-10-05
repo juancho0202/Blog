@@ -2,8 +2,8 @@
 const { data: posts } = await usePosts()
 
 useSeoMeta({
-  title: 'Blog',
-  description: 'All blog posts.',
+  title: 'Artículos',
+  description: 'Todos los artículos publicados.',
 })
 </script>
 
@@ -11,10 +11,10 @@ useSeoMeta({
   <section class="space-y-6">
     <header class="space-y-2">
       <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand">
-        Archive
+        Archivo
       </p>
       <h1 class="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-        Blog posts
+        Todos los artículos
       </h1>
     </header>
 

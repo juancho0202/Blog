@@ -1,38 +1,38 @@
 ---
-title: Writing Guide for Technical Posts
-description: A reference post that demonstrates MDC components, highlighted code blocks, and table-of-contents behavior.
+title: Guía de escritura para publicaciones técnicas
+description: Una publicación de referencia que demuestra componentes MDC, bloques de código destacados y el comportamiento de la tabla de contenidos.
 date: 2026-10-05
 tags:
-  - guide
-  - writing
+  - guía
+  - escritura
   - nuxt-content
 draft: false
-path: /blog/writing-guide
+path: /blog/guia-de-escritura
 ---
 
-Use this post as a reference when writing new entries.
+Usa esta publicación como referencia al escribir nuevas entradas.
 
 ## Callouts
 
 ::callout{type="info"}
-Use callouts to provide context that should stand out from the main flow.
+Usa callouts para proporcionar contexto que deba destacarse del flujo principal.
 ::
 
 ::callout{type="tip"}
-Use `pnpm new` to scaffold a post quickly.
+Usa `pnpm new` para generar una publicación rápidamente.
 ::
 
 ::callout{type="warning"}
-Prefer short sections with clear headings to keep the table of contents useful.
+Prefiere secciones cortas con encabezados claros para mantener la tabla de contenidos útil.
 ::
 
 ::callout{type="danger"}
-Do not publish drafts without a final review.
+No publiques borradores sin una revisión final.
 ::
 
-## Code blocks
+## Bloques de código
 
-### Filename and copy button
+### Nombre de archivo y botón de copia
 
 ```ts [nuxt.config.ts]
 export default defineNuxtConfig({
@@ -40,7 +40,7 @@ export default defineNuxtConfig({
 })
 ```
 
-### Highlight specific lines
+### Resaltar líneas específicas
 
 ```ts [app/composables/useReadingTime.ts] {2-4}
 export function useReadingTime(body: unknown) {
@@ -49,7 +49,7 @@ export function useReadingTime(body: unknown) {
 }
 ```
 
-### Diff and shell snippets
+### Snippets de Diff y shell
 
 ```diff [feature.patch]
 -const enabled = false
@@ -62,7 +62,7 @@ pnpm typecheck
 pnpm generate
 ```
 
-## Code group tabs
+## Pestañas de grupo de código
 
 ::code-group
 ```bash [pnpm]
@@ -78,7 +78,7 @@ yarn add @vueuse/nuxt
 ```
 ::
 
-## Figure
+## Figura
 
 ::figure{src="/images/blog/notebook.svg" alt="Notebook on a desk" caption="Figure component resolves content image paths with the project base URL."}
 ::
@@ -87,8 +87,8 @@ yarn add @vueuse/nuxt
 
 :you-tube{id="dQw4w9WgXcQ" title="Sample video embed with privacy-enhanced mode"}
 
-## Heading anchors and TOC
+## Encabezados de anclaje y TOC
 
-### Nested heading example
+### Ejemplo de encabezado anidado
 
-This section exists so the table of contents can show nested headings and active-section highlighting.
+Esta sección existe para que la tabla de contenidos pueda mostrar encabezados anidados y el resaltado de la sección activa.

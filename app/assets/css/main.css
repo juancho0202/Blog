@@ -4,17 +4,19 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Brand colors */
-  --color-brand: #2563eb;
-  --color-brand-strong: #1d4ed8;
-  --color-accent: #7c3aed;
-  --color-surface: #ffffff;
-  --color-surface-muted: #f8fafc;
-  --color-elevated: #f1f5f9;
-  --color-border: #e2e8f0;
-  --color-foreground: #0f172a;
-  --color-foreground-muted: #475569;
-  --color-code-bg: #0f172a;
+  /* Brand colors - Construction amber/orange */
+  --color-brand: #d97706;
+  --color-brand-strong: #b45309;
+  --color-accent: #f59e0b;
+  /* Light mode surfaces */
+  --color-surface: #fafaf8;
+  --color-surface-muted: #f0f0ed;
+  --color-elevated: #efefeb;
+  --color-border: #e0dfda;
+  --color-foreground: #2d2d2d;
+  --color-foreground-muted: #5a5a5a;
+  --color-code-bg: #2d2d2d;
+  --color-code-text: #e0e0e0;
 
   /* Font stacks */
   --font-sans: "Inter", "Segoe UI", sans-serif;
@@ -22,13 +24,14 @@
 }
 
 .dark {
-  --color-surface: #020817;
-  --color-surface-muted: #0f172a;
-  --color-elevated: #111827;
-  --color-border: #1e293b;
-  --color-foreground: #e2e8f0;
-  --color-foreground-muted: #cbd5e1;
-  --color-code-bg: #020817;
+  /* Dark mode surfaces */
+  --color-surface: #0f0f0f;
+  --color-surface-muted: #1a1a1a;
+  --color-elevated: #2d2d2d;
+  --color-border: #3d3d3d;
+  --color-foreground: #f5f5f5;
+  --color-foreground-muted: #b0b0b0;
+  --color-code-bg: #0f0f0f;
 }
 
 html {
@@ -41,7 +44,7 @@ html.dark {
 
 body {
   min-height: 100vh;
-  background: radial-gradient(circle at top, rgba(37, 99, 235, 0.08), transparent 32%), var(--color-surface);
+  background: radial-gradient(circle at top, rgba(217, 119, 6, 0.08), transparent 32%), var(--color-surface);
   color: var(--color-foreground);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
@@ -58,7 +61,7 @@ body {
   }
 
   ::selection {
-    background: rgba(37, 99, 235, 0.2);
+    background: rgba(217, 119, 6, 0.3);
   }
 }
 
@@ -84,7 +87,7 @@ body {
   }
 
   .prose :where(pre):not(:where(.not-prose *)) {
-    @apply overflow-x-auto rounded-2xl border border-border bg-slate-950 p-4 text-sm leading-6 text-slate-100 shadow-sm;
+    @apply overflow-x-auto rounded-2xl border border-border bg-code-bg p-4 text-sm leading-6 shadow-sm text-code-text;
   }
 
   .prose :where(pre code):not(:where(.not-prose *)) {
