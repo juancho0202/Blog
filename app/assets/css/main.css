@@ -87,8 +87,7 @@ body {
   }
 
   .prose :where(pre):not(:where(.not-prose *)) {
-    @apply overflow-x-auto rounded-2xl border border-border bg-code-bg p-4 text-sm leading-6 shadow-sm;
-    color: var(--color-code-text);
+    @apply overflow-x-auto rounded-2xl border border-border bg-code-bg p-4 text-sm leading-6 shadow-sm text-code-text;
   }
 
   .prose :where(pre code):not(:where(.not-prose *)) {
