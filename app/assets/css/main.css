@@ -89,11 +89,14 @@ body {
 
   .prose :where(pre):not(:where(.not-prose *)) {
     @apply overflow-x-auto rounded-2xl border border-border bg-code-bg p-4 text-sm leading-6 shadow-sm;
-    color: var(--color-code-text);
   }
 
   .prose :where(pre code):not(:where(.not-prose *)) {
     @apply bg-transparent p-0 text-inherit;
+  }
+
+  .prose :where(pre) {
+    color: var(--color-code-text);
   }
 
   .prose :where(code):not(:where(pre code, .not-prose *)) {
