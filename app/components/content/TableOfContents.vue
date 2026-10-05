@@ -131,7 +131,7 @@ onBeforeUnmount(() => {
     class="mb-6 rounded-2xl border border-border bg-surface-muted p-4 xl:hidden"
   >
     <summary class="cursor-pointer text-sm font-semibold text-foreground">
-      On this page
+      En esta página
     </summary>
     <ul class="mt-3 space-y-1.5 text-sm">
       <li
@@ -156,7 +156,7 @@ onBeforeUnmount(() => {
     class="sticky top-24 hidden max-h-[calc(100vh-7rem)] overflow-auto rounded-2xl border border-border bg-surface-muted p-4 xl:block"
   >
     <p class="mb-3 text-xs font-semibold uppercase tracking-[0.12em] text-foreground-muted">
-      On this page
+      En esta página
     </p>
     <ul class="space-y-1.5 text-sm">
       <li

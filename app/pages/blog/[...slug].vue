@@ -10,8 +10,8 @@ const { data: navigation } = await usePostNavigation(path)
 const readingTime = useReadingTime(computed(() => post.value?.body))
 
 useSeoMeta({
-  title: () => post.value?.title ?? 'Post',
-  description: () => post.value?.description ?? 'Blog post',
+  title: () => post.value?.title ?? 'Artículo',
+  description: () => post.value?.description ?? 'Artículo del blog',
 })
 </script>
 
@@ -23,7 +23,7 @@ useSeoMeta({
     <article class="min-w-0">
       <header class="mb-8 space-y-4">
         <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand">
-          Article
+          Artículo
         </p>
         <h1 class="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
           {{ post.title }}

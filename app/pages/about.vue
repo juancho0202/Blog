@@ -2,8 +2,8 @@
 const { data: page } = await usePage('/about')
 
 useSeoMeta({
-  title: () => page.value?.title ?? 'About',
-  description: () => page.value?.description ?? 'About this blog.',
+  title: () => page.value?.title ?? 'Acerca de',
+  description: () => page.value?.description ?? 'Acerca de este sitio.',
 })
 </script>
 

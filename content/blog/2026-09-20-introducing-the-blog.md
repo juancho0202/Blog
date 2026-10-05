@@ -1,47 +1,48 @@
 ---
-title: Introducing the Blog
-description: A place to collect the ideas, observations, and links that I find interesting.
+title: Bienvenido a Apuntes de Obra
+description: Un espacio para compartir experiencias en construcción y edificación.
 date: 2026-09-20
 updated: 2026-09-22
 tags:
-  - announcement
-  - personal
-  - notes
+  - anuncio
+  - construcción
+  - conocimiento
 draft: false
 cover: /images/blog/introducing-cover.svg
-path: /blog/introducing-the-blog
+path: /blog/bienvenido-apuntes-de-obra
 ---
 
-## Why this blog exists
+## Por qué existe Apuntes de Obra
 
-This blog is a place for the things I want to remember, share, and revisit later.
+Apuntes de Obra es un espacio dedicado a compartir las experiencias, conocimientos y lecciones aprendidas en el fascinante mundo de la construcción y la edificación en Colombia.
 
-I do not want to limit it to one topic or one style. The goal is simple: publish anything that feels worth keeping. A useful idea, an article worth returning to, a personal note, a small experiment, or a thought that deserves a little more space.
+Este sitio es un lugar para recopilar las cosas que vale la pena recordar, compartir y revisitar. No nos limitamos a un único tipo de contenido: el objetivo es simple y directo: publicar todo aquello que merezca ser preservado. Una técnica útil, un proyecto exitoso, una solución a un problema común, una observación importante, o una reflexión que merece más espacio.
 
-- Interesting reads
-- Personal notes
-- Side projects and experiments
-- Things I want to understand better
+- Técnicas de construcción probadas
+- Experiencias de proyectos reales
+- Soluciones prácticas en obra
+- Conocimiento del sector
+- Reflexiones sobre el oficio
 
-> The point is not perfection. It is to make space for curiosity.
+> El punto no es la perfección. Es crear un espacio para compartir el conocimiento y la experiencia.
 
-![Notebook on a desk](/images/blog/notebook.svg)
+## Qué tipo de contenido verás aquí
 
-## What kind of posts you'll see
+Este sitio está diseñado para ser flexible y práctico. Algunos artículos serán técnicos, otros reflexivos, y algunos puramente exploratorios.
 
-This site is meant to be flexible. Some entries will be practical, some reflective, and some just exploratory.
-
-| Post type | Why it belongs here |
+| Tipo de contenido | Por qué pertenece aquí |
 | --- | --- |
-| Short notes | Good ideas are easy to lose if they stay buried |
-| Links and references | I want a place to keep what I find useful |
-| Personal writing | Thinking in public helps me clarify my own view |
+| Notas técnicas | Las buenas prácticas son fáciles de olvidar si no se documentan |
+| Casos de proyectos | Queremos compartir lo que funciona en la práctica |
+| Soluciones a problemas | Documentar cómo resolvimos desafíos en obra |
+| Reflexiones profesionales | Pensar en público ayuda a aclarar nuestro punto de vista |
 
-The blog is not a formal publication. It is a personal archive of things worth sharing. That is the whole point.
+El sitio no es una publicación formal. Es un archivo personal de cosas que vale la pena compartir. Ese es todo el propósito.
 
 ```ts
-type Post = {
-  title: string
-  date: Date
-  tags: string[]
+type Articulo = {
+  titulo: string
+  fecha: Date
+  etiquetas: string[]
 }
+```

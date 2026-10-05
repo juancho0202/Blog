@@ -22,7 +22,7 @@ defineProps<{
       class="rounded-2xl border border-border bg-surface-muted p-4"
     >
       <p class="mb-2 text-xs font-semibold uppercase tracking-[0.12em] text-foreground-muted">
-        Previous
+        Anterior
       </p>
       <NuxtLink
         :to="previous.path"
@@ -36,7 +36,7 @@ defineProps<{
       class="rounded-2xl border border-border bg-surface-muted p-4 sm:text-right"
     >
       <p class="mb-2 text-xs font-semibold uppercase tracking-[0.12em] text-foreground-muted">
-        Next
+        Siguiente
       </p>
       <NuxtLink
         :to="next.path"
