@@ -16,6 +16,7 @@
   --color-foreground: #2D2D2D;
   --color-foreground-muted: #5A5A5A;
   --color-code-bg: #2D2D2D;
+  --color-code-text: #E0E0E0;
 
   /* Font stacks */
   --font-sans: "Inter", "Segoe UI", sans-serif;
@@ -31,6 +32,7 @@
   --color-foreground: #F5F5F5;
   --color-foreground-muted: #B0B0B0;
   --color-code-bg: #0F0F0F;
+  --color-code-text: #E0E0E0;
 }
 
 html {
@@ -86,7 +88,8 @@ body {
   }
 
   .prose :where(pre):not(:where(.not-prose *)) {
-    @apply overflow-x-auto rounded-2xl border border-border bg-code-bg p-4 text-sm leading-6 text-foreground shadow-sm;
+    @apply overflow-x-auto rounded-2xl border border-border bg-code-bg p-4 text-sm leading-6 shadow-sm;
+    color: var(--color-code-text);
   }
 
   .prose :where(pre code):not(:where(.not-prose *)) {
