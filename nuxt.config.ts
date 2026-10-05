@@ -82,7 +82,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      ignore: ['/__nuxt_content/'],
+      ignore: [/\/__nuxt_content\//],
     },
   },
   vite: {
