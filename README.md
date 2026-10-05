@@ -1,6 +1,6 @@
 # Blog
 
-Static markdown blog built with Nuxt 4 and generated for GitHub Pages.
+Static markdown blog built with Nuxt 4.
 
 ## Requirements
 
@@ -52,20 +52,8 @@ path: /blog/my-post-slug
 
 ## Deployment
 
-This project uses GitHub Actions to build and deploy to GitHub Pages on every push to `main`.
+This project is deployed to [Netlify](https://juan-munoz-blog.netlify.app/) and no longer uses GitHub Pages.
 
-- Deploy workflow: `.github/workflows/deploy.yml`
-- CI workflow for pull requests (lint, typecheck, generate): `.github/workflows/ci.yml`
+Netlify automatically builds and deploys the site on every push to `main`. The site is served at the root path (`/`).
 
-The deploy workflow computes `NUXT_APP_BASE_URL` automatically:
-
-- `/<repo-name>/` for project repositories
-- `/` only when the repository name exactly matches `<owner>.github.io` (user/org Pages repository)
-
-For this repository (`juancho0202/Blog`), the expected Pages base path is `/Blog/`.
-A repository named `blog.github.io` under owner `juancho0202` is still treated as a project repo and should use `/blog.github.io/`, not `/`.
-
-One-time setup required by the repository owner:
-
-1. Go to **Settings → Pages**
-2. In **Build and deployment**, set **Source** to **GitHub Actions**
+- CI workflow for pull requests (lint, typecheck): `.github/workflows/ci.yml`
