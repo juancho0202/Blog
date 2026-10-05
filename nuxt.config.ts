@@ -75,6 +75,9 @@ export default defineNuxtConfig({
       sqliteConnector: 'native',
     },
   },
+  routeRules: {
+    '/__nuxt_content/**': { prerender: false },
+  },
   compatibilityDate: '2025-07-15',
   nitro: {
     prerender: {
