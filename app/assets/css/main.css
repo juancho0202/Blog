@@ -4,10 +4,10 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Brand colors - Construction yellow */
-  --color-brand: #ffd60a;
-  --color-brand-strong: #ffc300;
-  --color-accent: #ff8c00;
+  /* Brand colors - Construction amber/orange */
+  --color-brand: #d97706;
+  --color-brand-strong: #b45309;
+  --color-accent: #f59e0b;
   /* Light mode surfaces */
   --color-surface: #fafaf8;
   --color-surface-muted: #f0f0ed;
@@ -44,7 +44,7 @@ html.dark {
 
 body {
   min-height: 100vh;
-  background: radial-gradient(circle at top, rgba(255, 214, 10, 0.08), transparent 32%), var(--color-surface);
+  background: radial-gradient(circle at top, rgba(217, 119, 6, 0.08), transparent 32%), var(--color-surface);
   color: var(--color-foreground);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
@@ -61,7 +61,7 @@ body {
   }
 
   ::selection {
-    background: rgba(255, 214, 10, 0.3);
+    background: rgba(217, 119, 6, 0.3);
   }
 }
 
