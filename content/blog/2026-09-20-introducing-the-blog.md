@@ -16,7 +16,7 @@ path: /blog/bienvenido-apuntes-de-obra
 
 Apuntes de Obra es un espacio dedicado a compartir las experiencias, conocimientos y lecciones aprendidas en el fascinante mundo de la construcción y la edificación en Colombia.
 
-Este sitio es un lugar para recopilar las cosas que vale la pena recordar, compartir y revisitar. No nos limitamos a un único tipo de contenido: el objetivo es simple y directo: publicar todo aquello que merezca ser preservado. Una técnica útil, un proyecto exitoso, una solución a un problema común, una observación importante, o una reflexión que merece más espacio.
+Este sitio es un lugar para recopilar las cosas que vale la pena recordar, compartir y revisitar. No nos limitamos a un único tipo de contenido. El objetivo es simple: publicar todo aquello que merezca ser preservado. Una técnica útil, un proyecto exitoso, una solución a un problema común, una observación importante, o una reflexión que merece más espacio.
 
 - Técnicas de construcción probadas
 - Experiencias de proyectos reales
