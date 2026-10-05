@@ -18,7 +18,7 @@ useSeoMeta({
 <template>
   <div
     v-if="post"
-    class="mx-auto max-w-6xl xl:grid xl:grid-cols-[minmax(0,1fr)_18rem] xl:gap-8"
+    class="mx-auto w-full xl:grid xl:grid-cols-[minmax(0,1fr)_18rem] xl:gap-8"
   >
     <article class="min-w-0">
       <header class="mb-8 space-y-4">
