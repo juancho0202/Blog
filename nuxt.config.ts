@@ -48,7 +48,7 @@ async function getPrerenderPostRoutes(): Promise<string[]> {
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint', '@nuxt/content', '@nuxt/fonts', '@nuxt/icon', '@nuxtjs/color-mode'],
+  modules: ['@nuxt/eslint', '@nuxt/content', '@nuxt/fonts', '@nuxt/icon', '@nuxtjs/color-mode', '@vueuse/nuxt'],
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   colorMode: {
@@ -57,6 +57,17 @@ export default defineNuxtConfig({
     fallback: 'light',
   },
   content: {
+    build: {
+      markdown: {
+        highlight: {
+          theme: {
+            default: 'github-light',
+            dark: 'github-dark',
+          },
+          langs: ['ts', 'js', 'vue', 'html', 'css', 'bash', 'json', 'yaml', 'md', 'diff'],
+        },
+      },
+    },
     experimental: {
       sqliteConnector: 'native',
     },
