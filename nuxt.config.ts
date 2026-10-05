@@ -26,10 +26,18 @@ function getFrontmatterValue(frontmatter: string, field: string): string | undef
   return match[1]?.trim().replace(/^['"]|['"]$/g, '')
 }
 
+function normalizeBaseURL(baseURL: string): string {
+  if (baseURL === '/') {
+    return ''
+  }
+
+  const withLeadingSlash = baseURL.startsWith('/') ? baseURL : `/${baseURL}`
+  return withLeadingSlash.endsWith('/') ? withLeadingSlash.slice(0, -1) : withLeadingSlash
+}
+
 async function getPrerenderPostRoutes(): Promise<string[]> {
   const contentDir = join(process.cwd(), 'content', 'blog')
-  const baseURL = process.env.NUXT_APP_BASE_URL ?? '/'
-  const normalizedBaseURL = baseURL === '/' ? '' : (baseURL.endsWith('/') ? baseURL.slice(0, -1) : baseURL)
+  const normalizedBaseURL = normalizeBaseURL(process.env.NUXT_APP_BASE_URL ?? '/')
   const files = await getAllMarkdownFiles(contentDir)
   const routes = await Promise.all(files.map(async (file) => {
     const source = await readFile(file, 'utf8')
