@@ -8,24 +8,25 @@
     </a>
 
     <header class="sticky top-0 z-40 border-b border-border/80 bg-surface/80 backdrop-blur-sm">
-      <div class="page-shell flex items-center justify-between gap-4 py-4">
+      <div class="page-shell flex items-center justify-between gap-2 py-4 sm:gap-4">
         <NuxtLink
           to="/"
-          class="text-lg font-semibold tracking-tight text-foreground transition-colors hover:text-brand"
+          class="hidden text-lg font-semibold tracking-tight text-foreground transition-colors hover:text-brand sm:block"
         >
           Apuntes de Obra
         </NuxtLink>
 
         <nav
           aria-label="Main navigation"
-          class="flex items-center gap-1 rounded-full border border-border bg-surface-muted p-1"
+          class="flex items-center gap-1 whitespace-nowrap rounded-full border border-border bg-surface-muted p-1"
         >
           <NuxtLink
             to="/"
             class="rounded-full px-3 py-1.5 text-sm font-medium text-foreground-muted transition-colors hover:text-brand"
             exact-active-class="bg-surface text-foreground shadow-sm"
           >
-            Inicio
+            <span class="sm:hidden">Apuntes de Obra</span>
+            <span class="hidden sm:inline">Inicio</span>
           </NuxtLink>
           <NuxtLink
             to="/blog"

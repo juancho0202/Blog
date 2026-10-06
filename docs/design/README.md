@@ -18,7 +18,7 @@ The current app already defines the base patterns we should preserve:
 
 - `app/layouts/default.vue` manages the page shell, header, footer, and skip link
 - `app/components/PostCard.vue`, `PostMeta.vue`, `TagList.vue`, and `PostNav.vue` define the core content cards and article navigation
-- `app/components/ColorModeToggle.vue` handles the light/dark/system switch
+- `app/components/ColorModeToggle.vue` handles the light/dark switch
 - `app/assets/css/main.css` centralizes Tailwind v4 theme tokens and typography tuning
 
 ## Stack and constraints
